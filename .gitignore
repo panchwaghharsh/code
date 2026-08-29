@@ -1,16 +1,94 @@
-# Compiled class file
+# ==============================================================================
+# OS & Editor Artifacts
+# ==============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# IDEs & Editors
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*.swn
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ==============================================================================
+# C / C++
+# ==============================================================================
+# Compiled Object files
+*.o
+*.obj
+*.ko
+*.lib
+*.a
+*.la
+*.lo
+
+# Dynamic Libraries
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Executables
+*.exe
+*.out
+*.app
+*.bin
+
+# Debugging symbols & folders
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Build systems (CMake, Make, Ninja)
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+cmake_install.cmake
+Makefile.in
+compile_commands.json
+build/
+bin/
+obj/
+
+# ==============================================================================
+# Java & BlueJ
+# ==============================================================================
+# Compiled Java class files
 *.class
 
-# Log file
+# Log files
 *.log
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Package Files
 *.jar
 *.war
 *.nar
@@ -19,6 +97,74 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# BlueJ specific files
+*.ctxt
+*.pkg
+*.bluej
+bluej.pkg
+
+# Build tools (Maven / Gradle)
+target/
+.gradle/
+build/
+out/
+
+# ==============================================================================
+# Rust
+# ==============================================================================
+# Cargo build artifacts
+/target/
+**/*.rs.bk
+
+# Cargo lock files (uncomment if working strictly on a binary/application)
+# Cargo.lock
+
+# ==============================================================================
+# JavaScript, HTML, CSS & Web Frameworks
+# ==============================================================================
+# Dependencies
+node_modules/
+jspm_packages/
+web_modules/
+
+# Build & Dist outputs
+dist/
+build/
+.next/
+.nuxt/
+out/
+.cache/
+.parcel-cache/
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# CSS Preprocessor / Transpiler artifacts
+*.css.map
+*.js.map
+.sass-cache/
+
+# ==============================================================================
+# SQL & Database Files
+# ==============================================================================
+# SQLite & local database storage
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+*.sdb
+
+# Database dump files & backups
+*.sql.dump
+*.dump
+*.bak
+
+# Temporary DB locks and logs
+*.ldb
+*.log
+*.ibd
+ibdata*
