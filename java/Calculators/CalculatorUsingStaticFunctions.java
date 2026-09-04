@@ -3,11 +3,11 @@ import java.util.*;
 public class CalculatorUsingStaticFunctions {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        displayTrignometery();
-        //System.out.println("Enter trignometery for Trignometric calculation . Or for simple calculation enter calculator");
-        //String check = in.next();
+        
+        System.out.println("Enter trignometery for Trignometric calculation . Or for simple calculation enter calculator");
+        String check = in.next();
 
-        /*if (check.equalsIgnoreCase("Trignometery"))
+        if (check.equalsIgnoreCase("Trignometery"))
         {
             System.out.println("Enter which trignometerical value you need(sin, cos, tan, cot, sec, cosec):");
             String t = in.next();
@@ -18,7 +18,7 @@ public class CalculatorUsingStaticFunctions {
             int a = in.nextInt();
 
             
-        }*/
+        }
     }
 
     public static void  trignometery(String t , int a)
@@ -87,13 +87,42 @@ public class CalculatorUsingStaticFunctions {
                     if (a == 0) {
                         System.out.println("The value of cot 0 = "+(1/0));
                     } else if (a == 30) {
-                        System.out.println("The value of tan 30 = √3");
+                        System.out.println("The value of cot 30 = √3");
                     } else if (a == 45) {
-                        System.out.println("The value of tan 30 = 1");
+                        System.out.println("The value of cot 30 = 1");
                     } else if (a == 60) {
                         System.out.println("The value of tan 30 = 1/√3");
                     } else if (a == 90) {
                         System.out.println("The value of tan 30 = 0");
+                    } else {
+                        System.out.println("Angle not suported");
+                    }
+                }
+                 else if (t.equalsIgnoreCase("sec")) {
+                    if (a == 0) {
+                        System.out.println("The value of sec 0 = "+(1/0));
+                    } else if (a == 30) {
+                        System.out.println("The value of sec 30 = √3");
+                    } else if (a == 45) {
+                        System.out.println("The value of sec 45 = 1");
+                    } else if (a == 60) {
+                        System.out.println("The value of sec 60 = 1/√3");
+                    } else if (a == 90) {
+                        System.out.println("The value of sec 90 = 0");
+                    } else {
+                        System.out.println("Angle not suported");
+                    }
+                } else if (t.equalsIgnoreCase("cosec")) {
+                    if (a == 0) {
+                        System.out.println("The value of cosec 0 = "+(1/0));
+                    } else if (a == 30) {
+                        System.out.println("The value of cosec 30 = √3");
+                    } else if (a == 45) 
+                        System.out.println("The value of cosec 45 = 1");
+                    } else if (a == 60) {
+                        System.out.println("The value of cosec 60 = 1/√3");
+                    } else if (a == 90) {
+                        System.out.println("The value of cosec 90 = 0");
                     } else {
                         System.out.println("Angle not suported");
                     }
